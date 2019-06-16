@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://smith-30.work',
   title: 'smith\'s cache',
-  subtitle: 'blog',
+  subtitle: 'daily cache and memo',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 5,

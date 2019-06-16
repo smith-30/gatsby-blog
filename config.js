@@ -27,7 +27,7 @@ module.exports = {
       telegram: 'smith-30',
       twitter: 'smith_30_',
       github: 'smith-30',
-      rss: '#',
+      rss: 'https://qiita.com/smith-30',
     }
   }
 };

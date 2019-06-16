@@ -24,9 +24,9 @@ module.exports = {
     bio: 'Software engineer at Tokyo. ',
     contacts: {
       email: '#',
-      telegram: '#',
-      twitter: 'https://twitter.com/smith_30_',
-      github: 'https://github.com/smith-30',
+      telegram: 'smith-30',
+      twitter: 'smith_30_',
+      github: 'smith-30',
       rss: '#',
       vkontakte: '#'
     }

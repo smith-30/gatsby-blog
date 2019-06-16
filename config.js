@@ -28,7 +28,6 @@ module.exports = {
       twitter: 'smith_30_',
       github: 'smith-30',
       rss: '#',
-      vkontakte: '#'
     }
   }
 };

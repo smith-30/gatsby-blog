@@ -4,8 +4,8 @@ date: "2019-03-22T23:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/psycho-pass/"
-category: "feelings"
-description: ""
+category: "dialy"
+description: "アニメPSYCHO-PASSを見た解説や感想"
 ---
 
 ## PSYCHO-PASS とは

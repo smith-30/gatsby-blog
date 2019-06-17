@@ -5,6 +5,8 @@ template: "post"
 draft: false
 slug: "/posts/psycho-pass/"
 category: "dialy"
+tags:
+  - "anime"
 description: "アニメPSYCHO-PASSを見た解説や感想"
 ---
 

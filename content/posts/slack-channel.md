@@ -5,6 +5,8 @@ template: "post"
 draft: false
 slug: "/posts/slack-channel/"
 category: "dialy"
+tags:
+  - "study"
 description: "slackは便利だけど、使い方を絞らないと本業の妨げになるので一回整理をしてみた"
 ---
 

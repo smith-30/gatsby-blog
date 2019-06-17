@@ -5,6 +5,8 @@ template: "post"
 draft: false
 slug: "/posts/pixar/"
 category: "dialy"
+tags:
+  - "reading"
 description: "ピクサー流 創造するちからを読んでみたので雑多に刺さった部分をメモ"
 ---
 

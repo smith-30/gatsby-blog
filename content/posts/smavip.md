@@ -5,6 +5,8 @@ template: "post"
 draft: false
 slug: "/posts/smavip/"
 category: "dialy"
+tags:
+  - "game"
 description: "スマブラspでVIP部屋に入れたので振り返ってみた"
 ---
 

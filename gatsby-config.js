@@ -187,5 +187,16 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        "strategy": "img",
+        "plugins": [
+          "gatsby-remark-draw",
+          'gatsby-remark-mermaid',
+          'gatsby-remark-graphviz'
+        ]
+      }
+    }
   ]
 };

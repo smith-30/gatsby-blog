@@ -2,4 +2,7 @@
 
 require('./src/assets/scss/init.scss');
 
-exports.onClientEntry = () => {};
+require("prismjs/themes/prism-solarizedlight.css")
+// require("prismjs/themes/prism-dark.css")
+
+exports.onClientEntry = () => { };

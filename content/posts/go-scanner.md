@@ -14,7 +14,8 @@ description: "go の bufio Scanner でハマったこと"
 
 タイトルの通りなのだが、競技プログラミングで文字列や数字を呼び出すために僕はいつもこのようにしていた
 
-```
+
+```go
 var sc = bufio.NewScanner(os.Stdin)
 
 func init() {

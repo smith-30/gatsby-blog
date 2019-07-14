@@ -90,6 +90,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-transformer-remark',
+      strategy: 'img',
       options: {
         plugins: [
           {
@@ -107,9 +108,37 @@ module.exports = {
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
           'gatsby-remark-autolink-headers',
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
+          'gatsby-remark-smartypants',
+          {
+            resolve: 'gatsby-remark-draw',
+            options: {
+              dot: {
+                edgeAttributes: {
+                  'arrowtail': 'empty',
+                  'arrowhead': 'empty'
+                }
+              },
+              bob: {
+                fontFamily: 'verdana'
+              },
+              mermaid: {
+                theme: 'forest'
+              }
+            }
+          },
+          'gatsby-remark-mermaid',
+          'gatsby-remark-graphviz',
+          `gatsby-remark-code-titles`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+            },
+          },
         ]
       }
     },
@@ -187,16 +216,32 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        "strategy": "img",
-        "plugins": [
-          "gatsby-remark-draw",
-          'gatsby-remark-mermaid',
-          'gatsby-remark-graphviz'
-        ]
-      }
-    }
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     strategy: 'img',
+    //     plugins: [
+    //       {
+    //         resolve: 'gatsby-remark-draw',
+    //         options: {
+    //           dot: {
+    //             edgeAttributes: {
+    //               'arrowtail': 'empty',
+    //               'arrowhead': 'empty'
+    //             }
+    //           },
+    //           bob: {
+    //             fontFamily: 'verdana'
+    //           },
+    //           mermaid: {
+    //             theme: 'forest'
+    //           }
+    //         }
+    //       },
+    //       'gatsby-remark-mermaid',
+    //       'gatsby-remark-graphviz'
+    //     ]
+    //   }
+    // }
   ]
 };

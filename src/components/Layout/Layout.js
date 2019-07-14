@@ -3,6 +3,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import type { Node as ReactNode } from 'react';
 import styles from './Layout.module.scss';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 
 type Props = {
   children: ReactNode,

@@ -18,7 +18,7 @@ gatsby で運用するmarkdownでumlが描けるように拡張したしたと�
 ## 手順
 
 
-```
+```none
 $ npm install --save gatsby-remark-mermaid gatsby-transformer-remark gatsby-remark-graphviz
 ```
 

@@ -4,7 +4,7 @@ date: "2019-07-01T11:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/uml-to-gatsby/"
-category: "dialy"
+category: "daily"
 tags:
   - "develop"
 description: "gatsbyにumlライブラリを入れたてみたメモ"

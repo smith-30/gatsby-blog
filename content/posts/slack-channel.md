@@ -4,7 +4,7 @@ date: "2019-02-08T23:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/slack-channel/"
-category: "dialy"
+category: "daily"
 tags:
   - "study"
 description: "slackは便利だけど、使い方を絞らないと本業の妨げになるので一回整理をしてみた"

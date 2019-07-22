@@ -4,7 +4,7 @@ date: "2019-06-15T11:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/pixar/"
-category: "dialy"
+category: "daily"
 tags:
   - "reading"
 description: "ピクサー流 創造するちからを読んでみたので雑多に刺さった部分をメモ"

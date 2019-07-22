@@ -4,7 +4,7 @@ date: "2019-04-24T23:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/smavip/"
-category: "dialy"
+category: "daily"
 tags:
   - "game"
 description: "スマブラspでVIP部屋に入れたので振り返ってみた"

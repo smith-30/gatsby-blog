@@ -4,7 +4,7 @@ date: "2019-06-30T11:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/fashion_magazine/"
-category: "dialy"
+category: "daily"
 tags:
   - "reading"
 description: "ファッション雑誌発売日メモ"

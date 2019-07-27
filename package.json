@@ -5,7 +5,7 @@
   "main": "n/a",
   "scripts": {
     "develop": "yarn run clean && gatsby develop",
-    "build": "yarn run clean && gatsby build",
+    "build": "yarn run clean && export NODE_OPTIONS=--max_old_space_size=4096 && gatsby build",
     "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "rimraf .cache public",
     "flow": "flow",
@@ -43,7 +43,7 @@
     "bluebird": "^3.5.5",
     "classnames": "^2.2.6",
     "codecov": "^3.5.0",
-    "gatsby": "^2.10.5",
+    "gatsby": "^2.13.41",
     "gatsby-link": "^2.1.1",
     "gatsby-plugin-catch-links": "^2.0.15",
     "gatsby-plugin-feed": "^2.2.3",

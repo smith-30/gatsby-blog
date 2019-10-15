@@ -45,7 +45,7 @@ insert 時に行が被らなければトランザクションが効いていて�
 
 ### 参考
 
-https://blog.kamipo.net/entry/2013/12/03/235900
-https://qiita.com/west-hiroaki/items/ea6ee53765282a9c86cb
-https://qiita.com/nkriskeeic/items/24b7714b749d38bba87b
-https://dev.mysql.com/doc/refman/5.6/ja/innodb-record-level-locks.html
+- https://blog.kamipo.net/entry/2013/12/03/235900
+- https://qiita.com/west-hiroaki/items/ea6ee53765282a9c86cb
+- https://qiita.com/nkriskeeic/items/24b7714b749d38bba87b
+- https://dev.mysql.com/doc/refman/5.6/ja/innodb-record-level-locks.html

@@ -71,5 +71,8 @@ description: "イタリア旅行の雑記"
 
 ## venice
 
+![01](/media/italy/02.png)
 
 ## rome
+
+![01](/media/italy/01.jpg)

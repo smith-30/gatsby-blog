@@ -5,9 +5,11 @@ template: "page"
 
 ## Experience
 
-### 2017 - present: Software Developer @ aptpod, Inc
+### 2019 - present: Software Engineer @ techtouch, Inc
 
-### 2015 - 2017: Software Developer @ fullspeed, Inc
+### 2017 - 2019: Software Engineer @ aptpod, Inc
+
+### 2015 - 2017: Software Engineer @ fullspeed, Inc
 
 ## Education
 

@@ -3,7 +3,7 @@ title: security 設定メモ
 date: "2019-12-20T11:00:00.000Z"
 template: "post"
 draft: false
-slug: "/posts/beyond-prod/"
+slug: "/posts/security-settings/"
 category: "daily"
 tags:
   - "study"

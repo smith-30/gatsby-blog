@@ -140,7 +140,7 @@ TL で流れてきた[managers playing book](https://github.com/ksindi/managers-
 ## Coding
 
 - クリティカルパスでのコーディングは避ける
-- 誰かが休憩を必要とするときにオンコールをカバーしますか？
+- 誰かが休暇を必要とするときにオンコールをカバーしますか？
 - コードレビュー
 - 煩わしいが最優先に思われることのないP2バグを拾う
 - 監視チェックをクリーンアップし、カバレッジを生成するためのライブラリを作成していますか？
@@ -156,9 +156,13 @@ TL で流れてきた[managers playing book](https://github.com/ksindi/managers-
 
 - 気難しいブレーンストーミングセッションは避けてください。決定を会議に委ねないでください。その場で意思決定を行い、長文でそれを伝え、会議を使用してそれについて話し合う
 - アマゾンスタイルの「6pager」と「2pager」として書かれる提案を奨​​励する
-  - 
+  - [#6 Page and 2 Page Documents 要約](https://smith-30.work/posts/manage-and-playing-playing/6-page-and-2-page-documents-summary)
 - 会議の最後には必ずアクション、オーナー、タイミングを決めて、次のステップが明確になるようにする
 - スタッフミーティングについては、テーブルを回って、彼らの最大の懸念が何であるかをレポートに尋ねます
+
+### 6 Page and 2 Page Documents Summary
+
+[この記事](https://medium.com/@inowland/using-6-page-and-2-page-documents-to-make-organizational-decisions-3216badde909) の要約メモ
 
 ## Hiring
 

@@ -259,6 +259,29 @@ SELECT ...略... FROM t1 WHERE col2 = 'ABC' ORDER BY col1 LIMIT 10;
 ALTER TABLE t1 ADD INDEX (col2, col1);
 ```
 
+スロークエリ設定
+
+```
+mysql> set global slow_query_log_file = '/tmp/mysql-slow.log';
+mysql> set global long_query_time = 0.5; #500ms
+mysql> set global slow_query_log = ON;
+
+# check
+mysql> show variables like 'slow%';
+mysql> show variables like 'long%';
+
+
+# 再起動
+$ /etc/init.d/mysqld restart
+```
+
+スロークエリの調査
+
+```
+mysql> explain <sql>
+```
+
+
 ### Go
 
 ### GOGC
@@ -313,4 +336,17 @@ main.go の場所で
 $ go mod init
 $ go mod tidy
 $ make build
+```
+
+### Makefile
+
+```
+build:
+	GOARCH="amd64" GOOS="linux" go build -v -trimpath -ldflags "-X main.revision=$(REVISION)"
+
+deploy: build
+	ssh <user>@<host> systemctl stop <go service>
+	scp -P 22 <app> <user>@<host>:/home/isucon/<app>/webapp/go
+	ssh <user>@<host> systemctl start <go service>
+	ssh <user>@<host> systemctl enable <go service>
 ```

@@ -1,6 +1,6 @@
 ---
 title: 2020 and me
-date: "2020-12-30T11:00:00.000Z"
+date: "2020-12-31T11:00:00.000Z"
 template: "post"
 draft: false
 slug: "/posts/2020-and-me/"

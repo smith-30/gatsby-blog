@@ -1,5 +1,5 @@
 ---
-title: cloud vendor black hole
+title: swiss-army-knife
 date: "2021-01-25T11:00:00.000Z"
 template: "post"
 draft: false

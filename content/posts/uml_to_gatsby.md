@@ -61,7 +61,7 @@ graph TD;
 ```
 
 
-**graphiz** だと
+**graphviz** だと
 
 ```
 \```dot-svg
@@ -74,7 +74,7 @@ digraph graphname {
 ```
 
 
-```dot-svg
+```graphviz
 digraph graphname {
   a -> b;
   b -> c;

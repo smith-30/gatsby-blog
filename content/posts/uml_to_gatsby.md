@@ -74,7 +74,7 @@ digraph graphname {
 ```
 
 
-```graphviz
+```dot-svg
 digraph graphname {
   a -> b;
   b -> c;

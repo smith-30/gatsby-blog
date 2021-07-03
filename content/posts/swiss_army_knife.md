@@ -44,3 +44,14 @@ $ git cherry-pick -m 1 <merge commit hash>
 ```
 $ psql -h myhost -d mydb -U myuser
 ```
+
+### 自身のテーブルを指定するサブクエリの書き方
+
+```
+DELETE e.*
+FROM tableE e
+WHERE id IN (SELECT id
+             FROM (SELECT id
+                   FROM tableE
+                   WHERE arg = 1 AND foo = 'bar') x);
+```

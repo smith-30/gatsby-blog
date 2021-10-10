@@ -87,29 +87,30 @@ jobs:
     steps:
       - checkout
       - run: npm install --prefix=$HOME/.local --global conventional-github-releaser
+      - run: CONVENTIONAL_GITHUB_RELEASER_TOKEN=$GH_TOKEN conventional-github-releaser --help
       - run: DEBUG=conventional-github-releaser CONVENTIONAL_GITHUB_RELEASER_TOKEN=$GH_TOKEN conventional-github-releaser -p angular
 
 workflows:
   version: 2
   test:
     jobs:
-      - install
-      - flow-typed:
-          requires:
-            - install
-      - lint:
-          requires:
-            - flow-typed
-            - install
-      - test:
-          requires:
-            - install
-      - coverage:
-          requires:
-            - install
-      - codecov:
-          requires:
-            - coverage
+      # - install
+      # - flow-typed:
+      #     requires:
+      #       - install
+      # - lint:
+      #     requires:
+      #       - flow-typed
+      #       - install
+      # - test:
+      #     requires:
+      #       - install
+      # - coverage:
+      #     requires:
+      #       - install
+      # - codecov:
+      #     requires:
+      #       - coverage
       - conventional_github_release:
           filters:
             tags:

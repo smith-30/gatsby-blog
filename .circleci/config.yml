@@ -87,7 +87,7 @@ jobs:
     steps:
       - checkout
       - run: npm install --prefix=$HOME/.local --global conventional-github-releaser
-      - run: CONVENTIONAL_GITHUB_RELEASER_TOKEN=$GH_TOKEN conventional-github-releaser -p angular
+      - run: DEBUG=conventional-github-releaser CONVENTIONAL_GITHUB_RELEASER_TOKEN=$GH_TOKEN conventional-github-releaser -p angular
 
 workflows:
   version: 2

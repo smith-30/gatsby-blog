@@ -2,9 +2,9 @@ changelog:
   exclude:
     labels:
       - ignore-for-release
-    authors:
-      # bot など release に含めたくない時
-      # - smith-30
+    # authors:
+    # bot など release に含めたくない時
+    # - smith-30
   categories:
     - title: Breaking Changes 🛠
       labels:

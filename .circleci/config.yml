@@ -81,7 +81,15 @@ jobs:
             - coverage-output-{{ .Environment.CIRCLE_SHA1 }}
       - run: yarn global add codecov
       - run: yarn codecov
-    
+
+  conventional_github_release:
+    docker:
+      - image: circleci/node:15.12.0-browsers
+    steps:
+      - checkout
+      - run: npm install --prefix=$HOME/.local --global conventional-github-releaser
+      - run: CONVENTIONAL_GITHUB_RELEASER_TOKEN=$GH_TOKEN conventional-github-releaser -p angular
+
 workflows:
   version: 2
   test:
@@ -103,3 +111,11 @@ workflows:
       - codecov:
           requires:
             - coverage
+      - conventional_github_release:
+          filters:
+            tags:
+              only:
+                - /^v(\d+.)(\d+.)(\d+)-beta.*/
+                - /^v(\d+.)(\d+.)(\d+)/
+            branches:
+              ignore: /.*/

@@ -11,12 +11,12 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-{{ checksum "package.json" }}
       - run: yarn install --frozen-lockfile
       - save_cache:
           paths:
             - node_modules
-          key: dependencies-{{ checksum "yarn.lock" }}
+          key: dependencies-{{ checksum "package.json" }}
 
   flow-typed:
     <<: *defaults
@@ -24,15 +24,15 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-{{ checksum "package.json" }}
       - restore_cache:
           keys:
-            - flow-typed-{{ checksum "yarn.lock" }}
+            - flow-typed-{{ checksum "package.json" }}
       - run: yarn flow-typed
       - save_cache:
           paths:
             - flow-typed
-          key: flow-typed-{{ checksum "yarn.lock" }}
+          key: flow-typed-{{ checksum "package.json" }}
 
   lint:
     <<: *defaults
@@ -40,10 +40,10 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-{{ checksum "package.json" }}
       - restore_cache:
           keys:
-            - flow-typed-{{ checksum "yarn.lock" }}
+            - flow-typed-{{ checksum "package.json" }}
       - run: yarn lint
 
   test:
@@ -52,7 +52,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-{{ checksum "package.json" }}
       - run: yarn test --runInBand --no-cache
 
   coverage:
@@ -61,7 +61,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-{{ checksum "package.json" }}
       - run: yarn test:coverage --runInBand --no-cache
       - save_cache:
           key: coverage-{{ .Environment.CIRCLE_SHA1 }}
@@ -74,7 +74,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "yarn.lock" }}
+            - dependencies-{{ checksum "package.json" }}
       - restore_cache:
           keys:
             - coverage-output-{{ .Environment.CIRCLE_SHA1 }}

@@ -110,6 +110,8 @@ workflows:
       - codecov:
           requires:
             - coverage
+  release:
+    jobs:
       - conventional_github_release:
           filters:
             tags:

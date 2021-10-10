@@ -1,22 +1,3 @@
----
-title: github release お試し
-date: "2021-10-10T10:00:00.000Z"
-template: "post"
-draft: false
-slug: "/posts/10-10/"
-category: "daily"
-description: "この blog 運用 repository に適用してみた"
-
----
-
-### PR title のバリデーション
-
-[これ](https://github.com/zeke/semantic-pull-requests) 使うと便利。  
-
-.github/semantic.yml として設定ファイル置く。  
-ex.) PR title のみチェック
-
-```
 # Disable validation, and skip status check creation
 # enabled: false
 
@@ -56,5 +37,3 @@ titleOnly: true
 # Allow use of Revert commits (eg on github: "Revert "feat: ride unicorns"")
 # this is only relevant when using commitsOnly: true (or titleAndCommits: true)
 # allowRevertCommits: true
-
-```

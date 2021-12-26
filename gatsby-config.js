@@ -216,32 +216,5 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    // {
-    //   resolve: 'gatsby-transformer-remark',
-    //   options: {
-    //     strategy: 'img',
-    //     plugins: [
-    //       {
-    //         resolve: 'gatsby-remark-draw',
-    //         options: {
-    //           dot: {
-    //             edgeAttributes: {
-    //               'arrowtail': 'empty',
-    //               'arrowhead': 'empty'
-    //             }
-    //           },
-    //           bob: {
-    //             fontFamily: 'verdana'
-    //           },
-    //           mermaid: {
-    //             theme: 'forest'
-    //           }
-    //         }
-    //       },
-    //       'gatsby-remark-mermaid',
-    //       'gatsby-remark-graphviz'
-    //     ]
-    //   }
-    // }
   ]
 };

@@ -6,8 +6,6 @@ paginate: true
 
 # Consistent Hashing
 
-Kohei Misu
-
 ---
 
 # Overview

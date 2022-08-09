@@ -216,5 +216,11 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
   ]
 };

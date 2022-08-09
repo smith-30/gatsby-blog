@@ -59,6 +59,7 @@ module.exports = {
               custom_elements: [{ 'content:encoded': edge.node.html }]
             }))
           ),
+          title: "smith-30's cache",
           query: `
               {
                 allMarkdownRemark(

@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'daily cache and memo',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 5,
+  postsPerPage: 10,
   googleAnalyticsId: 'UA-142152105-1',
   menu: [
     {
